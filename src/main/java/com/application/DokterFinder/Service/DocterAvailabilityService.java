@@ -15,7 +15,6 @@ import com.application.DokterFinder.Entities.DoctorAvailabilityEntity;
 import com.application.DokterFinder.Repositories.DocterAvailabilityRepository;
 import com.application.DokterFinder.Repositories.DocterRepository;
 
-import net.bytebuddy.implementation.bytecode.Throw;
 
 @Service
 public class DocterAvailabilityService {
