@@ -10,8 +10,7 @@ COPY . .
 RUN gradle build --no-daemon -x test
 
 # -------- Stage 2: Run the JAR with OpenJDK --------
-FROM openjdk:21-jdk-slim
-
+FROM eclipse-temurin:21-jdk
 WORKDIR /app
 
 # Copy JAR from previous stage
