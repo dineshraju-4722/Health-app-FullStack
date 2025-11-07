@@ -13,6 +13,7 @@ public class GetDoctersDto {
 	private String experience;
 	private HospitalInfo hospital;
 	private String email;
+	private String imglink;
 	private String contact;
 	private String status;
 	private SpecializationInfo specialization;

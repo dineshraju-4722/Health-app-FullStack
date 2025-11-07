@@ -5,10 +5,11 @@ CREATE TABLE IF NOT EXISTS specialization (
 
 CREATE TABLE IF NOT EXISTS hospital (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(255) NOT NULL UNIQUE,
+    name VARCHAR(255) NOT NULL UNIQUE,  
     location VARCHAR(255),
-    email VARCHAR(255),
-    contact VARCHAR(50)
+    email VARCHAR(255) not NULL unique,
+    contact VARCHAR(50),
+     CONSTRAINT unique_name_email UNIQUE (name, email)
 );
 
 CREATE TABLE IF NOT EXISTS doctor (

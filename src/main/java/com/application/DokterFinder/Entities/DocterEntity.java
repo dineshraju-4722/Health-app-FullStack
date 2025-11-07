@@ -41,8 +41,8 @@ public class DocterEntity {
     
     private String contact;
     
-    
-    private String status;
+   
+    private String status="false";
     
     private String experience;
     
@@ -52,9 +52,9 @@ public class DocterEntity {
 
     
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "hospital_id")
+    @JoinColumn(name = "hospital_id")  
     private HospitalEntity hospital;
-    
+     
     
     @OneToMany(mappedBy = "doctor", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<AppointmentEntity> appointments = new ArrayList<>();
